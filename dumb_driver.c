@@ -66,6 +66,7 @@ static int dumb_bo_create_with_modifiers(struct bo *bo, uint32_t width, uint32_t
 }
 
 INIT_DUMB_DRIVER(evdi)
+INIT_DUMB_DRIVER(exynos)
 INIT_DUMB_DRIVER(komeda)
 INIT_DUMB_DRIVER(marvell)
 INIT_DUMB_DRIVER(meson)

@@ -46,6 +46,7 @@ extern const struct backend backend_vc4;
 
 // Dumb / generic drivers
 extern const struct backend backend_evdi;
+extern const struct backend backend_exynos;
 extern const struct backend backend_marvell;
 extern const struct backend backend_mediatek;
 extern const struct backend backend_meson;
@@ -77,10 +78,10 @@ static const struct backend *drv_backend_list[] = {
 #ifdef DRV_XE
 	&backend_xe,
 #endif
-	&backend_evdi,	    &backend_komeda,	&backend_marvell, &backend_mediatek,
-	&backend_meson,	    &backend_nouveau,	&backend_radeon,  &backend_rockchip,
-	&backend_sun4i_drm, &backend_synaptics, &backend_udl,	  &backend_virtgpu,
-	&backend_vkms,	    &backend_mock
+	&backend_evdi,	    &backend_exynos,	&backend_komeda,  &backend_marvell,
+	&backend_mediatek,  &backend_meson,	&backend_nouveau, &backend_radeon,
+	&backend_rockchip,  &backend_sun4i_drm, &backend_synaptics, &backend_udl,
+	&backend_virtgpu,   &backend_vkms,	&backend_mock
 };
 
 void drv_preload(bool load)
